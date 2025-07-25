@@ -1,0 +1,16 @@
+Thought Process
+
+- Since, the question mentions uniqueness of numbers, the immediate thought
+  is to use a HashSet.
+- However, the question also mentions modifications have to be incorporated
+  into the original array itself
+- Hence, I have used HashMap to store all unique elements, using their index
+  as a key.
+- The choice to choose index as key comes handly, as the original array itself
+  is sorted in ascending order, so every time we find a unique number, we can simply
+  increase index value (this will serve as the index on which this element has to be modified)
+  and store the unique value
+- Finally, we only have to iterate k times (size of the hashmap), and using the index as key
+  fetch the value, and make the apppopriate modification into the original array
+
+Thanks for your time! 😊
